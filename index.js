@@ -6,7 +6,9 @@ const app=express()
 const server=http.createServer(app)
 app.use('/',express.static(path.join(__dirname,'public')))
 const io=socketio(server)
-const SERVER_PORT=2345||process.env.PORT
+
+
+const SERVER_PORT=process.env.PORT||2345
 
 
 
