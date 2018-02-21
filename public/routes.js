@@ -1,0 +1,13 @@
+myapp.config(['$routeProvider',function($routeProvider){
+    $routeProvider
+    .when('/login',{
+        templateUrl:'views/loginview.html',
+        controller:'logincontroller',
+        controllerAs:'login'
+    })
+    .when('/main',{
+        templateUrl:'views/mainview.html',
+        controller:'chatcontroller',
+        controllerAs:'chat'
+    })
+}])

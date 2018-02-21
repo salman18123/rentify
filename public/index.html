@@ -15,19 +15,19 @@
     
     <title>Document</title>
 </head>
-<body ng-controller="chatcontroller as chat">
-        <h1>Socket example</h1>
-        <input type="text" id="msgbox" ng-model="chat.msg">
-        <button id="sendmsg" ng-click="chat.sendmsg()">send</button>
-        <ul id="msglist"></ul>
+<body>
+        <div ng-view></div>
+       
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
         
+        
         <script src="index2.js"></script>
         <script type="text/javascript" src="service.js"></script>
+        <script src="routes.js"></script>
     
     
 </body>

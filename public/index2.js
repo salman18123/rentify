@@ -17,3 +17,7 @@ socket.on('re_msg',(data)=>{
     document.getElementById("msglist").appendChild(li);
 })
 }])
+myapp.controller('logincontroller',['$location','$http',function($http,$location){
+    var main=this;
+    
+}])
